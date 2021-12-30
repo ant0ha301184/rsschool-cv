@@ -4,6 +4,7 @@
 ## Junior Frontend Developer ##
 
 ---
+
 ### **Contact information:** ###
 * **Address:** Uzbekistan, Tashkent
 * **Phone:** +998 93 5385454
@@ -63,9 +64,7 @@ except IOError:
 print(rezult)
 ```
 
-
 ---
-
 
 ### **Education:**
 * Tashkent University of Information Technologies
