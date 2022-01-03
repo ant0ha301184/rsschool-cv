@@ -186,131 +186,166 @@ text-decoration: underline;
 }
 
 
-.contactInfo.education li {
-    margin-bottom: 15px;
+.right-side {
+    position: relative;
+    background: #fff;
+    padding: 40px 100px 40px 80px;
 }
 
 
-.contactInfo.education h5{
-    color: #03a9f4;
+.about {
+    margin-bottom: 50px;
+}
+
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+
+.title2 {
+    color: #0018a1;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+p {
+    color: black ;
+}
+
+
+.box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+    
+.skills .box h4 {
+    text-transform: uppercase;
+    color: #294d8b;
+    font-weight: 500; 
+}
+
+
+.skills .box .percent {
+    position: relative;
+    width: 100%;
+    height: 12px;
+    background: #f0f0f0;
+}
+
+
+.skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #03a9f4;
+}
+    
+
+pre {
+    background-color: rgb(214, 233, 255);
+}
+
+
+.about_code {
+    position: relative;
+    padding-top: 40px;
+    width: 100%;
+    display: grid;   
+    justify-content: baseline;    
+}
+
+
+.about_code h4 {
+    color: #294d8b;
     font-weight: 500;
 }
 
 
-.contactInfo.education h4:nth-child(2){
-    color: #fff;
-    font-weight: 500;
-}
-   
-
-.contactInfo.education h4{
-    color: rgb(255, 255, 255);
-    font-weight: 300;
+.education {
+    padding-top: 60px;    
 }
 
 
-.contactInfo.language li  {
+.education .in-list {
+    padding-left: 40px;
+}
+    
+
+.education li {
     margin-bottom: 15px;
 }
+
+
+.courses {
+    padding-top: 30px;
+}
+
+
+.courses ul {
+    position: relative;
+}
+  
+
+.courses ul li {
+    position: relative;
+    cursor: pointer;
+}
+
+
+.courses .in-list {
+    padding-left: 40px;
+}
+
+
+.courses ul li a {
+    color: black;
+    font-weight: bold;
+    transition: 0.5s;     /*плавно меняются свойства интеракт элементу*/
+}
+
+
+.courses ul li a:link { 
+color: black; 
+text-decoration: none; 
+}
+
+
+.courses ul li a:hover { 
+color: red; 
+text-decoration: underline; 
+}
+
+
+.language {
+    padding-top: 40px;
+}
+
+
+
    
 
-.contactInfo.language h4{
-    color: rgb(255, 255, 255);
-    font-weight: 300;
-}
-
-
-.contactInfo.language i{
-    color: rgb(255, 255, 255);
-    font-weight: 300;
-}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    .container .right-side {
-        position: relative;
-        background: #fff;
-        padding: 40px;
-    }
-    .about {
-        margin-bottom: 50px;
-    
-    }
-    .about:last-child {
-        margin-bottom: 0;
-    }
-    .title2 {
-        color: #003147;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        margin-bottom: 10px;
-    }
-    p {
-        color:#333 ;
-    }
-    .about .box {
-        display: flex;
-        flex-direction: row;
-        margin: 20px 0;
-    }
-    .skills .box {
-        position: relative;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 150px 1fr;
-        justify-content: center;
-        align-items: flex-start;
-       
-    }
-    
-    .skills .box h4 {
-        text-transform: uppercase;
-        color: #848c99;
-        font-weight: 500; 
-    
-    }
-    .skills .box .percent {
-        position: relative;
-        width: 100%;
-        height: 10px;
-        background: #f0f0f0;
-    }
-    .skills .box .percent div {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        background-color: #03a9f4;
-    }
-    pre {
-        background-color: rgb(197, 186, 186);
-    }
-    .about_code {
-        position: relative;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 150px 1fr;
-        justify-content: center;
-        align-items: center;
-    }
-    
-
-
-      @media (max-width: 768px) {
+      /* @media (max-width: 768px) {
         .container {
           width: 100%;
         }
@@ -330,5 +365,5 @@ text-decoration: underline;
 
       .free {
           color: #03a9f4;
-      }
+      } */
       

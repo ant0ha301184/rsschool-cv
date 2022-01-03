@@ -9,7 +9,7 @@
     <link rel="icon" href="assets/img/resume_16x16.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha512-g06pohSHYbSOHKq8tdDGXckE6C23Yt30xlTFDhrO0OcO/bNO2MWXb63oqU/Y23GDMNOon100eGHxZPBnT4QgMw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--иконки-->
 </head>
-<body>
+<body>    
     <nav class="nav">
         <ul class="nav-list">
             <li><a href="#contacts" class="nav-link"> Contacts </a></li>
@@ -17,7 +17,7 @@
             <li><a href="#education" class="nav-link"> Education </a></li>
             <li><a href="#courses" class="nav-link"> Courses </a></li>
             <li><a href="#skills" class="nav-link"> Skills </a></li>
-            <li><a href="#projects" class="nav-link"> Projects </a></li>
+            <!-- <li><a href="#projects" class="nav-link"> Projects </a></li> -->
             <li><a href="#code" class="nav-link"> Code </a></li>
             <li><a href="#languages" class="nav-link"> Languages </a></li>
         </ul>
@@ -31,7 +31,7 @@
                 </div>
                 <h1>Anton Kolnobritskiy<br><span>Junior Frontend Developer</span></h1>
             </div>
-            <!--CONTACT INFO-->
+<!--CONTACT INFO-->
             <div class="contactInfo">
                 <h3 class="title" id="contacts">Contact Info</h3>
                 <ul>
@@ -53,46 +53,133 @@
                     </li>
                 </ul>
             </div>
+        </div>
+<!--RIGHT SIDE-->
+        <div class="right-side">
+            <div class="about">
+                <h2 class="title2" id="summary">About me</h2>
+                <p>My full name is Kolnobritskiy Anton Valerevich. I was born in Tashkent, Uzbekistan in 1984. I'm 37 years old. About my appearance, 
+                    I'm tall and heavy-bodied (probably), I have brown eyes and hair. About my character, I am very friendly, but only with people that 
+                    I think are quite good. I happen really impatient and curious, but I do not consider it a disadvantage. I do not think my life is 
+                    boring because every day confronted with something new and interesting for me. For example: meeting new people or a meeting with the best friends.</p>
+            </div>
+<!--SKILLS-->    
 
-
-       
-
-
+             <div class="about skills"> 
+                <h2 class="title2" id="skills">Skills</h2>
+                <h5>in progress</h5>
+                <div class="box">
+                    <h4>Python</h4>
+                    <div class="percent">
+                        <div style="width: 40%;"></div>
+                    </div>
+                </div>                
+                <div class="box">
+                    <h4>HTML&CSS</h4>
+                    <div class="percent">
+                        <div style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>JavaScript</h4>
+                    <div class="percent">
+                        <div style="width: 10%;"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>Git / GitHub</h4>
+                    <div class="percent">
+                        <div style="width: 60%;"></div>
+                    </div>
+                </div>                
+            </div>
+<!--CODE EXAMPLE-->          
+            <div class="about_code">
+                <h2 class="title2" id="code">Code example</h2>
+                <h4>Python Code</h4>
+                <div>
+                    <pre> 
+                        <code >
+    import sys
+    from tkinter.messagebox import *
+                            
+    rezult = {}
+                            
+    if len(sys.argv) != 2:
+        print("Передайте имя файла в качестве аргумента!")
+        quit()
+                            
+    try:
+        with open(sys.argv[1], "r") as file:
+            data = file.readline()
+                            
+            while data != "":
+                # data = data.rstrip()
+                data = data.lower()
+                for i in data:
+                    if i == "\n":
+                        continue
+                    if i not in rezult.keys():
+                        rezult[i] = 1
+                    else:
+                        rezult[i] += 1
+                            
+                data = file.readline()
+    except IOError:
+        showwarning("Ошибка при доступе к файлу!")
+                            
+    print(rezult)                            
+                        </code>
+                    </pre>
+                </div> 
+            </div>
 <!--EDUCATION-->
-            <div class="contactInfo education">
-                <h3 class="title" id="education">Education</h3>
+            <div class="education">
+                <h2 class="title2" id="education">Education</h2>
                 <ul>
                     <li>
-                        <h5>2021 - present time</h5>
-                        <h4>The Rolling Scopes School (in progress)</h4>
-                        <h4>Course «JavaScript/Front-end. Stage 0»</h4> 
+                        <h3>Tashkent University of Information Technologies</h3>
+                        <ul class="in-list">
+                            <li>
+                                <h3>Telecommunications</h3>
+                            </li>
+                        </ul>                                        
                     </li>
                     <li>
-                        <h5>2014</h5>
-                        <h4>School of Business of Belarusian State University</h4>
-                        <h4>Managerial Accounting</h4> 
+                        <h3>SOS Academy (Tashkent)</h3>
+                        <ul class="in-list">
+                            <li>
+                                <h3>Python programming</h3>
+                            </li>
+                        </ul>                         
                     </li>
-                     <li>
-                        <h5>1998 - 2003</h5>
-                        <h4>Belarussian State Economic University</h4>
-                        <h4>Faculty of Management, Economics and enterprise management</h4> 
-                     </li>
                 </ul>
             </div>
+<!--COURSES-->
+            <div class="courses">
+                <h2 class="title2" id="courses">Courses</h2>
+                    <ul>
+                        <li>
+                            <a href="https://rs.school/"><h3>The Rolling Scopes School</h3></a>
+                            <ul class="in-list">
+                                <li>
+                                    <h3>JavaScript/Front-end. Stage 0</h3>
+                                </li>
+                            </ul>
+                        </li>                     
+                    </ul>
+            </div>
 <!--LANGUAGES-->
-            <div class="contactInfo language">
-                <h3 class="title" id="languages">English</h3>
+            <div class="language">
+                <h2 class="title2" id="languages">Languages</h2>
                 <ul>
                     <li>
-                       <h4>StreamLine Language School English test result: Pre-Intermediate (CEFR A2+)</h4>
+                       <h3>Russian - native speaker</h3>
                     </li>
                     <li>
-                        <h4>EPAM English test result: A2</h4>
+                        <h3>English - A2</h3>
                     </li>
-                </ul>
-                <i>I have regular speaking practice with native speakers on <a class="free"
-                    href="https://mailchi.mp/studycelta.com/english-students-for-celta-teaching-practice" >FREE
-                   Online English course</a> </i>
+                </ul>                
             </div>      
         </div>
     </main>
