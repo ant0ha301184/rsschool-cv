@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anton Kolnobritskiy CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/img/resume_16x16.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha512-g06pohSHYbSOHKq8tdDGXckE6C23Yt30xlTFDhrO0OcO/bNO2MWXb63oqU/Y23GDMNOon100eGHxZPBnT4QgMw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--иконки-->
+</head>
+<body>    
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="#contacts" class="nav-link"> Contacts </a></li>
+            <li><a href="#summary" class="nav-link"> About me </a></li>
+            <li><a href="#education" class="nav-link"> Education </a></li>
+            <li><a href="#courses" class="nav-link"> Courses </a></li>
+            <li><a href="#skills" class="nav-link"> Skills </a></li>
+            <!-- <li><a href="#projects" class="nav-link"> Projects </a></li> -->
+            <li><a href="#code" class="nav-link"> Code </a></li>
+            <li><a href="#languages" class="nav-link"> Languages </a></li>
+        </ul>
+    </nav>
+        
+    <main class="container">
+        <div class="left-side"> 
+            <div class="profile">
+                <div class="imgbox">
+                    <img src="assets/img/foto.png" alt="FOTO">
+                </div>
+                <h1>Anton Kolnobritskiy<br><span>Junior Frontend Developer</span></h1>
+            </div>
+<!--CONTACT INFO-->
+            <div class="contactInfo">
+                <h3 class="title" id="contacts">Contact Info</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span><a href="https://www.google.com/maps/place/5+Khamid+Alimdjan+Street,+Tashkent,+Uzbekistan/@41.3145234,69.293213,18z/data=!4m13!1m7!3m6!1s0x38ae8b0cc379e9c3:0xa5a9323b4aa5cb98!2sTashkent,+Uzbekistan!3b1!8m2!3d41.2994958!4d69.2400734!3m4!1s0x38aef4d3fb683e73:0xf0d97873a2e7d6f6!8m2!3d41.3147822!4d69.2932944?hl=en">Uzbekistan, Tashkent</a></span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <span><a href="mailto:ant0ha301184@gmail.com">ant0ha301184@gmail.com</a></span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fab fa-github"></i></span>
+                        <span><a href="https://github.com/ant0ha301184">Anton Kolnobritskiy</a></span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-phone-alt" aria-hidden="true"></i></span>
+                        <span><a href="tel:+998935385454">(+998)-935385454</a></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+<!--RIGHT SIDE-->
+        <div class="right-side">
+            <div class="about">
+                <h2 class="title2" id="summary">About me</h2>
+                <p>My full name is Kolnobritskiy Anton Valerevich. I was born in Tashkent, Uzbekistan in 1984. I'm 37 years old. About my appearance, 
+                    I'm tall and heavy-bodied (probably), I have brown eyes and hair. About my character, I am very friendly, but only with people that 
+                    I think are quite good. I happen really impatient and curious, but I do not consider it a disadvantage. I do not think my life is 
+                    boring because every day confronted with something new and interesting for me. For example: meeting new people or a meeting with the best friends.</p>
+            </div>
+<!--SKILLS-->    
+
+             <div class="about skills"> 
+                <h2 class="title2" id="skills">Skills</h2>
+                <h5>in progress</h5>
+                <div class="box">
+                    <h4>Python</h4>
+                    <div class="percent">
+                        <div style="width: 40%;"></div>
+                    </div>
+                </div>                
+                <div class="box">
+                    <h4>HTML&CSS</h4>
+                    <div class="percent">
+                        <div style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>JavaScript</h4>
+                    <div class="percent">
+                        <div style="width: 10%;"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>Git / GitHub</h4>
+                    <div class="percent">
+                        <div style="width: 60%;"></div>
+                    </div>
+                </div>                
+            </div>
+<!--CODE EXAMPLE-->          
+            <div class="about_code">
+                <h2 class="title2" id="code">Code example</h2>
+                <h4>Python Code</h4>
+                <div>
+                    <pre> 
+                        <code >
+    import sys
+    from tkinter.messagebox import *
+                            
+    rezult = {}
+                            
+    if len(sys.argv) != 2:
+        print("Передайте имя файла в качестве аргумента!")
+        quit()
+                            
+    try:
+        with open(sys.argv[1], "r") as file:
+            data = file.readline()
+                            
+            while data != "":
+                # data = data.rstrip()
+                data = data.lower()
+                for i in data:
+                    if i == "\n":
+                        continue
+                    if i not in rezult.keys():
+                        rezult[i] = 1
+                    else:
+                        rezult[i] += 1
+                            
+                data = file.readline()
+    except IOError:
+        showwarning("Ошибка при доступе к файлу!")
+                            
+    print(rezult)                            
+                        </code>
+                    </pre>
+                </div> 
+            </div>
+<!--EDUCATION-->
+            <div class="education">
+                <h2 class="title2" id="education">Education</h2>
+                <ul>
+                    <li>
+                        <h3>Tashkent University of Information Technologies</h3>
+                        <ul class="in-list">
+                            <li>
+                                <h3>Telecommunications</h3>
+                            </li>
+                        </ul>                                        
+                    </li>
+                    <li>
+                        <h3>SOS Academy (Tashkent)</h3>
+                        <ul class="in-list">
+                            <li>
+                                <h3>Python programming</h3>
+                            </li>
+                        </ul>                         
+                    </li>
+                </ul>
+            </div>
+<!--COURSES-->
+            <div class="courses">
+                <h2 class="title2" id="courses">Courses</h2>
+                    <ul>
+                        <li>
+                            <a href="https://rs.school/"><h3>The Rolling Scopes School</h3></a>
+                            <ul class="in-list">
+                                <li>
+                                    <h3>JavaScript/Front-end. Stage 0</h3>
+                                </li>
+                            </ul>
+                        </li>                     
+                    </ul>
+            </div>
+<!--LANGUAGES-->
+            <div class="language">
+                <h2 class="title2" id="languages">Languages</h2>
+                <ul>
+                    <li>
+                       <h3>Russian - native speaker</h3>
+                    </li>
+                    <li>
+                        <h3>English - A2</h3>
+                    </li>
+                </ul>                
+            </div>      
+        </div>
+    </main>
+    <footer>
+        <div class="footer-left">
+            <a href="https://github.com/ant0ha301184">
+                <img src="./assets/img/pngegg.png" alt="Icon Github" width=48px>
+            </a>   
+        </div>
+        <div class="footer-center">            
+            <div>
+                <h3>&#169; 2022</h3>
+            </div>
+        </div>
+        <div class="footer-right">
+            <a href="https://rs.school/">
+                <img src="./assets/img/logo-rsschool3.png" alt="RS School" width=100px>
+            </a>
+        </div>  
+            
+                
+        
+    </footer>
+
+</body>
+</html>

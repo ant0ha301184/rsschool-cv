@@ -1,0 +1,356 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+        scroll-behavior: smooth; /*плавная прокрутка навигации*/
+}
+
+
+@font-face {
+    font-family: Roboto;
+    src: url("assets/fonts/Roboto/Roboto-Italic.ttf");
+    font-weight: 100;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    min-height: 100vh;
+    margin: 0 auto;
+    font-family: Roboto, Arial, sans-serif;
+    padding: 2rem;
+    background-color: #ebe7d9;
+}
+
+
+
+.nav-list { /*навигация расположение*/
+    display: flex; /*расположение в строку*/
+    justify-content: flex-end; /*сдвигаем вправо*/
+    align-items: center; /*выравниваем по центру по высоте*/
+    list-style: none; /*убираем стандартные маркеры*/
+}
+
+
+.nav-link { /*добавляем отступы ссылкам навигации*/
+    padding: 0 20px;
+    line-height: 50px;
+    color: #11022c;
+    transition: 0.5s;     /*плавно меняются свойства интеракт элементу*/
+
+}
+a:link { 
+    color: blue; 
+    text-decoration: none; 
+}
+
+
+a:hover { 
+    color: red; 
+    text-decoration: underline; 
+}
+ 
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 100%; /*ограничение ширины контейнера*/
+    min-width: 1000px;  
+    background: #fff;
+    margin: 0 auto;
+    display: flex;
+    box-shadow: 0 35px 55px #003147; /*тень*/
+}
+
+
+.container .left-side {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    background: #003147;
+    padding: 40px;
+}
+    
+.profile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /*линия под именем*/
+}
+
+
+.profile .imgbox {
+    position: relative;
+    width: 350px; 
+    height: 430px;
+    border-radius: 30%;
+    overflow: hidden;
+}
+
+
+.profile .imgbox img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover; */
+}
+
+
+.profile h1 { /*формат фио*/
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+
+.profile h1 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+    
+
+.contactInfo {
+    padding-top: 40px;
+}
+
+
+.title {
+    color: rgb(175, 192, 247);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+ 
+
+.contactInfo ul {
+    position: relative;
+}
+  
+
+.contactInfo ul li {
+    position: relative;
+    list-style: none; /*отключает значки ненумерованного списка*/
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+    
+.contactInfo ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+
+.contactInfo ul li span {
+    color: #fff;
+    font-weight: 300;
+}
+
+
+.contactInfo ul li a {
+    color: #fff;
+    font-weight: 300;
+    transition: 0.5s;     /*плавно меняются свойства интеракт элементу*/
+
+}
+
+
+.contactInfo ul li a:link { 
+color: white; 
+text-decoration: none; 
+}
+
+
+.contactInfo ul li a:hover { 
+color: red; 
+text-decoration: underline; 
+}
+
+
+.right-side {
+    position: relative;
+    background: #fff;
+    padding: 40px 100px 40px 80px;
+}
+
+
+.about {
+    margin-bottom: 50px;
+}
+
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+
+.title2 {
+    color: #0018a1;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+p {
+    color: black ;
+}
+
+
+.box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+    
+.skills .box h4 {
+    text-transform: uppercase;
+    color: #294d8b;
+    font-weight: 500; 
+}
+
+
+.skills .box .percent {
+    position: relative;
+    width: 100%;
+    height: 12px;
+    background: #f0f0f0;
+}
+
+
+.skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #03a9f4;
+}
+    
+
+pre {
+    background-color: rgb(214, 233, 255);
+}
+
+
+.about_code {
+    position: relative;
+    padding-top: 40px;
+    width: 100%;
+    display: grid;   
+    justify-content: baseline;    
+}
+
+
+.about_code h4 {
+    color: #294d8b;
+    font-weight: 500;
+}
+
+
+.education {
+    padding-top: 60px;    
+}
+
+
+.education .in-list {
+    padding-left: 40px;
+}
+    
+
+.education li {
+    margin-bottom: 15px;
+}
+
+
+.courses {
+    padding-top: 30px;
+}
+
+
+.courses ul {
+    position: relative;
+}
+  
+
+.courses ul li {
+    position: relative;
+    cursor: pointer;
+}
+
+
+.courses .in-list {
+    padding-left: 40px;
+}
+
+
+.courses ul li a {
+    color: black;
+    font-weight: bold;
+    transition: 0.5s;     /*плавно меняются свойства интеракт элементу*/
+}
+
+
+.courses ul li a:link { 
+color: black; 
+text-decoration: none; 
+}
+
+
+.courses ul li a:hover { 
+color: red; 
+text-decoration: underline; 
+}
+
+
+.language {
+    padding-top: 40px;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    width: 100%;
+}
+
+
+.footer-center {    
+    margin-left: auto;
+}
+
+
+.footer-right {
+    margin-left: auto;
+}
